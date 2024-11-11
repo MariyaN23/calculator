@@ -1,0 +1,39 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "lint-staged",
+    "start": "webpack serve",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.14.0",
+    "@html-eslint/eslint-plugin": "^0.27.0",
+    "@html-eslint/parser": "^0.27.0",
+    "eslint": "^9.14.0",
+    "glob-all": "^3.3.1",
+    "globals": "^15.12.0",
+    "html-webpack-plugin": "^5.6.3",
+    "husky": "^9.1.6",
+    "prettier": "^3.3.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  },
+  "lint-staged": {
+    "*.{js,html}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "css-loader": "^7.1.2",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.96.1"
+  }
+}
